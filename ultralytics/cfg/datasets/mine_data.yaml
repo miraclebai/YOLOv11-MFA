@@ -1,0 +1,28 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Documentation: https://docs.ultralytics.com/datasets/detect/coco/
+# Example usage: yolo train data=coco128.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+# Train/val/test sets as 
+#1) dir: path/to/imgs, 
+#2) file: path/to/imgs.txt, or 
+# 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# 数据集根目录路径
+path: /disk16t/www/SCTD  # 数据集根目录
+
+# 训练集路径
+train: /disk16t/www/SCTD/images/train  # 存放训练图像的文件夹
+
+# 验证集路径
+val: /disk16t/www/SCTD/images/val  # 存放验证图像的文件夹
+
+# 类别名称
+names:
+  0: aircraft
+  1: ship
+  2: human
+
